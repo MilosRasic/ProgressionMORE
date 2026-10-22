@@ -1,0 +1,43 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+*~
+
+# IDE files
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.userprefs
+*.DotSettings
+*.DotSettings.user
+*.sln.iml
+
+# Build artifacts
+[Bb]in/
+[Oo]bj/
+*.pdb
+*.mdb
+*.cache
+
+# The game loads Assemblies/*.dll, and that file is produced by MSBuild.
+*.dll
+*.dll.mdb
+
+# Temporary files
+*.tmp
+*.log
+
+# NuGet packages
+packages/
+*.nupkg
+*.snupkg
+.nuget/
+
+# Keep solution and project files
+!*.sln
+!*.csproj

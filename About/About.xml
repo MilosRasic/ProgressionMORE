@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <packageId>ProgressionMORE</packageId>
+    <author>Canenald</author>
+    <name>ProgressionMORE</name>
+    <description>A collection of bug and compatibility fixes for Progression modpack.</description>
+    <supportedVersions>
+        <li>1.7</li>
+    </supportedVersions>
+    <modDependencies>
+        <li>
+            <packageId>brrainz.harmony</packageId>
+            <displayName>Harmony</displayName>
+            <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+            <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+        </li>
+        <li>
+            <packageId>astryl.Psycasts</packageId>
+            <displayName>Psycasts²</displayName>
+            <steamWorkshopUrl>steam://url/CommunityFilePage/3761869362</steamWorkshopUrl>
+        </li>
+    </modDependencies>
+    <loadAfter>
+        <li>brrainz.harmony</li>
+        <li>astryl.Psycasts</li>
+    </loadAfter>
+    <modVersion>1.0</modVersion>
+</ModMetaData>
