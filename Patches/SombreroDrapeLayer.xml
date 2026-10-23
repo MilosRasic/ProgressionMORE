@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- Layers: Capes and Armor labels EyeCover as Drape. Wear the sombrero there instead of Headgear. -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="VFES_Headgear_Sombrero"]/apparel/layers</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="VFES_Headgear_Sombrero"]/apparel/layers</xpath>
+			<value>
+				<layers>
+					<li>EyeCover</li>
+				</layers>
+			</value>
+		</match>
+	</Operation>
+</Patch>
