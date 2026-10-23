@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- Prevent Reel's bokshelf from being shown as widget on Rersearch bench. It is already hidden from Architect menu. -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="ReelStorageBookshelf"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/ThingDef[defName="ReelStorageBookshelf"]/designationCategory</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="ReelStorageBookshelf"]/designationCategory</xpath>
+				<value>
+					<designationCategory Inherit="False" />
+				</value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="ReelStorageBookshelf"]</xpath>
+				<value>
+					<designationCategory Inherit="False" />
+				</value>
+			</nomatch>
+		</match>
+	</Operation>
+</Patch>

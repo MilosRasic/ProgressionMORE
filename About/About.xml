@@ -23,6 +23,7 @@
     <loadAfter>
         <li>brrainz.harmony</li>
         <li>astryl.Psycasts</li>
+        <li>reel.expanded.storage</li>
     </loadAfter>
     <modVersion>1.0</modVersion>
 </ModMetaData>
