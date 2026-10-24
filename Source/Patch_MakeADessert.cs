@@ -15,10 +15,6 @@ namespace ProgressionMORE
         static bool Prepare()
         {
             bool found = AccessTools.TypeByName("VanillaMemesExpanded.CompAbilityMakeADessert") != null;
-            if (found)
-            {
-                Log.Message("[ProgressionMORE] Make a dessert targets the first meal on the tile, including meal subcategories.");
-            }
 
             return found;
         }

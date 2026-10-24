@@ -21,10 +21,6 @@ namespace ProgressionMORE
         static bool Prepare()
         {
             bool found = DefDatabase<RitualBehaviorDef>.GetNamedSilentFail(BehaviorDefName) != null;
-            if (found)
-            {
-                Log.Message("[ProgressionMORE] Firework festival stays disabled until each operator has a launcher.");
-            }
 
             return found;
         }

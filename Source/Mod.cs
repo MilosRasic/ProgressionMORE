@@ -8,7 +8,6 @@ namespace ProgressionMORE
         static Mod()
         {
             new Harmony("ProgressionMORE").PatchAll();
-            Log.Message("[ProgressionMORE] Specialization nodes use a stable hitbox.");
         }
     }
 }
